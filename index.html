@@ -17,66 +17,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
   </head>
   <body>
-    <header>
-      <h1>Tu tienda de cine</h1>
-      <div class="header-buttons">
-        <button id="openFilters">Filtrar</button>
-        <button id="openCarrito">
-          🛒 Carrito (<span id="contadorCarrito">0</span>)
-        </button>
-      </div>
-    </header>
-
-    <!-- Modal de filtros -->
-    <section id="modal" class="modal oculto">
-      <div class="modal-contenido">
-        <span id="cerrarModal" class="cerrar">&times;</span>
-        <h2>Filtrar películas</h2>
-        <form id="filtrosForm">
-          <label for="genero">Género:</label>
-          <select id="genero">
-            <option value="">Todos</option>
-            <option value="Drama">Drama</option>
-            <option value="Comedia">Comedia</option>
-            <option value="Terror">Terror</option>
-            <option value="Romance">Romance</option>
-            <option value="Suspense">Suspense</option>
-            <option value="Familiar">Familiar</option>
-            <option value="Musical">Musical</option>
-          </select>
-
-          <label for="año">Año:</label>
-          <input type="number" id="año" placeholder="Ej: 2001" />
-
-          <button type="submit">Aplicar filtros</button>
-          <button type="button" id="limpiarFiltros">Limpiar filtros</button>
-        </form>
-      </div>
-    </section>
-
-    <!-- Modal del carrito -->
-    <section id="carritoModal" class="modal oculto">
-      <div class="modal-contenido">
-        <span id="cerrarCarrito" class="cerrar">&times;</span>
-        <h2>Tu carrito</h2>
-        <div id="carritoContenido"></div>
-        <p><strong>Total:</strong> <span id="totalCarrito">0.00 €</span></p>
-      </div>
-    </section>
-
-    <!-- Películas destacadas -->
-    <section class="destacadas-section">
-      <h2>🎬 Películas Destacadas 🎬</h2>
-      <div class="carrusel-wrapper">
-        <button id="btnIzquierda" class="carrusel-btn">‹</button>
-        <div class="destacadas" id="destacadasContainer"></div>
-        <button id="btnDerecha" class="carrusel-btn">›</button>
-      </div>
-    </section>
-
-    <!-- Películas normales -->
-    <h2>📼 Nuestras películas 📼</h2>
-    <main id="productosContainer"></main>
+    <header></header>
 
     <footer>
       <p>&copy; 2025 Tu tienda de cine. Todos los derechos reservados.</p>
